@@ -1,0 +1,121 @@
+-----------------
+ MAIN PRINCIPLES
+-----------------
+The tool "htvp.exe" needs to be running on the slave's PC (It doesn't show any window and it doesn't show any icon in the notification area).
+The aim of the tool is to complete some tasks for you. Therefore you need to be able to send it some commands and to receive the results if any.
+
+There are two ways of sending commands to the tool:
+
+1) Using your keyboard
+----------------------
+You just have to enter the command using your keyboard. It works only from a remote keyboard: if the slave type these commands using his local leyboard, they won't work.
+Important remarks:
+- Make sure your entry focus is in the slave's PC when you enter the command.
+- Do not use any Backspace, Supp, Arrows in the middle of the command: It needs to be the right key sequence.
+- If your entry focus is in a Notepad the sub will see your typing, if your entry focus is on his desktop, he won't see anything which may be better :-)
+
+Example: "tvh" is the command to hide the TV Panel, therefore, if you type "Hello SlavehtpHow are you?" the TV Panel disapears exactly when you type the "p" just before the "How..."
+
+All the keybload commands start with "tv" which is the prefix for keyboard commands.
+
+In order to avoid wrong command detection in normal writting like in chat, the commands have been chosen to not be found in normal English: for instance the command "ell" wouldn't be ok because you don't want "hello" to trigger a command! :-)
+
+Because these commands are to be typed like in a "blind mode" (for instance when your entry focus is in the slave's desktop there is no echo when you type a character), the commands have to be very short and without any parameters.
+
+List of available Keyboard commands as of today (feel free to ask for more :-) ):
+tvh	--> Hides the TV Panel
+tvs	--> Shows the TV Panel
+tvch	--> Hides the TV Computer list
+tvcs	--> Shows the TV Computer list
+tvnk	--> Freezes the slave's keyboard (Warning: It remains frozen as long as the tool is running, even if you disconnect and even if he uses CTRL+ALT+DEL)
+tvk	--> Releases the slave's keyboard
+tvexit	--> Stops the tool (Then everything comes back to normal for the slave and you need to relaunch the tool if you want to get its features back)
+
+2) Using the clipboard
+----------------------
+You just have to select and copy the command... and that's it! No need to past them anywhere, only copy to put them in the clipboard. When i got this idea i was very excited :-)
+You built all the commands you need in a notepad document and then, as soon as you copy the commands you want, the tool executes them!
+That way, it is very easy to launch enhanced commands with required parameters.
+Moreover, in case you command gives a result, the result is delivered in the clipboard: then simply "past" in a blank notepad document and you get the result!
+In order to avoid the slave to discover the command as well as the result:
+- the clipboard is erased as soon as the tool reads the command
+- the result is kept for 30 seconds in the clipboard, then it is erased.
+
+
+
+
+
+
+
+
+
+If it is launched as Administrator, it will be able to perform admin tasks, otherwise it will be onli
+
+'--------------------'
+' Clipboard commands '
+'--------------------'
+
+' To get the version of the tool
+'-------------------------------
+GetVersion
+
+' To create a customized version of the tool
+'-------------------------------------------
+CreateCustomizedTool <Prefix for direct commands> <Keyword for clipboard commands>
+
+' To get Windows Accounts Information
+'------------------------------------
+GetWindowsInfo
+
+' To create the new admin account <Name> with the optional password [Password]
+'-----------------------------------------------------------------------------
+CreateAdminAccount <Name> [Password]
+
+' To remove admin rights from the account <Name>
+'-----------------------------------------------
+RemoveAdminRights <Name>
+
+' To create the new standard account <Name> with the optional password [Password]
+'--------------------------------------------------------------------------------
+CreateStandardAccount <Name> [Password]
+
+' To set a new password for the account <Name> (removes the password if [Password] is missing)
+'---------------------------------------------------------------------------------------------
+SetPW <Name> [Password]
+
+' To delete the account <Name>
+'-----------------------------
+DeleteAccount <Name>
+
+
+CreateLocalGroupAccount
+RemovePW
+RemoveFromLocalGroup
+AddToLocalGroup
+GetLocalGroups
+GetUserAccounts
+GetAccountsOfLocalGroup
+Run
+
+CreateLocalGroupAccount Administrators ShellyAxe toto
+CreateStandardAccount Dog 123456
+RemoveFromLocalGroup Administrators Dog
+AddToLocalGroup Administrators ShellyAxe
+RemovePW Dog
+SetPW ShellyAxe tuntun
+GetLocalGroups
+GetUserAccounts
+GetAccountsOfLocalGoup Administrators
+ForceToType "thank you mistress"
+Run notepad.exe
+
+GetAdminAccounts
+
+' List of group admin names
+'--------------------------
+Administrators
+Administrateurs
+Administradores
+Administratoren
+Amministratori
+

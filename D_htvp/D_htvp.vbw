@@ -1,0 +1,12 @@
+F_D_Main = 159, 125, 943, 576, Z, 25, 25, 809, 476, C
+D_Global = 54, 54, 830, 494, 
+D_Fonctions = 79, 79, 855, 519, 
+D_Outils = 217, 240, 1422, 907, 
+F_Schedule = 175, 175, 959, 626, , 150, 150, 934, 601, C
+F_Actions = 175, 175, 961, 626, , 125, 125, 909, 576, C
+cGDIpToken = 75, 75, 1024, 378, 
+cGDIpImage = 50, 50, 999, 353, 
+cGDIpMultiImage = 0, 0, 0, 0, C
+cGDIpRenderer = 0, 0, 0, 0, C
+cGDIpPenBrush = 50, 50, 900, 501, 
+Tri_Index_Class = 275, 275, 1553, 953, 

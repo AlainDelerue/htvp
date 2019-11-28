@@ -1,0 +1,35 @@
+;*** BEGIN **********************************************************
+;**                                                                **
+;** Automatically generated on: Tue Oct 22 19:52:11 2019           **
+;**                                                                **
+;** MakeCAB Version: (32) 1.00.0600 (11/22/96)                     **
+;**                                                                **
+;*** BEGIN **********************************************************
+[disk list]
+1,Disk 1
+[cabinet list]
+1,1,htvp - Monitoring tool.CAB
+[file list]
+1,0,Setup.Lst,4087
+1,0,setup.exe,143872
+1,1,htvp - Monitoring tool.exe,376832
+1,1,msvbvm60.dll,1386496
+1,1,oleaut32.dll,581632
+1,1,olepro32.dll,90624
+1,1,asycfilt.dll,67584
+1,1,stdole2.tlb,16896
+1,1,COMCAT.DLL,22288
+1,1,VB6FR.DLL,119568
+1,1,GdiPlus.dll,1628160
+1,1,COMDLG32.OCX,140096
+1,1,CMDLGFR.DLL,32768
+1,1,MSCOMCTL.OCX,1062704
+1,1,MSCMCFR.DLL,141312
+1,1,SETUP1.EXE,290816
+1,1,VB6STKIT.DLL,102912
+1,1,ST6UNST.EXE,74752
+;*** END ************************************************************
+;**                                                                **
+;** Automatically generated on: Tue Oct 22 19:52:11 2019           **
+;**                                                                **
+;*** END ************************************************************

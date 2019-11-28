@@ -1,0 +1,182 @@
+[Root]
+Most Recent Package=Installation D_htvp
+
+
+[Package|Logiciel d'installation standard 1|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Data\Epson\oki\vw\hideTV 2\D_htvp\Package
+
+[Package|Logiciel d'installation standard 1|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Logiciel d'installation standard 1|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Logiciel d'installation standard 1|Files Found]
+
+[Package|Logiciel d'installation standard 1|Files Released]
+
+[Package|Logiciel d'installation standard 1|Missing Dependency Information]
+
+[Package|Logiciel d'installation standard 1|Out-of-Date Dependency Information]
+
+[Package|Logiciel d'installation standard 1|Files Added]
+
+[Package|Logiciel d'installation standard 1|Files Removed]
+
+[Package|Logiciel d'installation standard 1|Files In Project]
+C:\Data\Epson\oki\vw\hideTV 2\D_htvp\htvp - Monitoring tool.exe=Yes
+C:\Windows\System32\msvbvm60.dll=Yes
+C:\Windows\System32\oleaut32.dll=Yes
+C:\Windows\System32\olepro32.dll=Yes
+C:\Windows\System32\asycfilt.dll=Yes
+C:\Windows\System32\stdole2.tlb=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Windows\System32\VB6FR.DLL=Yes
+C:\Windows\SysWOW64\COMDLG32.OCX=Yes
+C:\Windows\SysWOW64\CMDLGFR.DLL=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\Windows\System32\VB6STKIT.DLL=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|Logiciel d'installation standard 1|Configure Registry Files]
+Applicable=No
+
+[Package|Logiciel d'installation standard 1|Configure Remote Servers]
+Applicable=No
+
+[Package|Logiciel d'installation standard 1|Install Locations]
+C:\Data\Epson\oki\vw\hideTV 2\D_htvp\htvp - Monitoring tool.exe=$(AppPath)
+C:\Windows\System32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\Windows\System32\oleaut32.dll=$(WinSysPathSysFile)
+C:\Windows\System32\olepro32.dll=$(WinSysPathSysFile)
+C:\Windows\System32\asycfilt.dll=$(WinSysPathSysFile)
+C:\Windows\System32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\VB6FR.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\COMDLG32.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\CMDLGFR.DLL=$(WinSysPath)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\Windows\System32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+
+[Package|Logiciel d'installation standard 1|Configure Shared Files]
+Applicable=Yes
+C:\Data\Epson\oki\vw\hideTV 2\D_htvp\htvp - Monitoring tool.exe=No
+
+[Package|Logiciel d'installation standard 1|Distribution]
+Type=single
+Size=
+Title=htvp_Monitoring_Tool
+
+[Package|Logiciel d'installation standard 1|IconGroups]
+Group0=htvp_Monitoring_Tool
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|Logiciel d'installation standard 1|htvp_Monitoring_Tool]
+Icon1="htvp - Monitoring tool.exe"
+Title1=htvp_Monitoring_Tool
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Logiciel d'installation standard 1|Package]
+PackageFolder=C:\Data\Epson\oki\vw\hideTV 2\D_htvp\Package
+ProjectFolder=C:\Data\Epson\oki\vw\hideTV 2\D_htvp
+ServerSideCab=
+File1=C:\Data\Epson\oki\vw\hideTV 2\D_htvp\Package\setup.exe
+File2=C:\Data\Epson\oki\vw\hideTV 2\D_htvp\Package\Setup.Lst
+File3=C:\Data\Epson\oki\vw\hideTV 2\D_htvp\Package\htvp - Monitoring tool.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+
+[Package|Installation D_htvp|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Data\Epson\oki\vw\hideTV 2\D_htvp\Package
+
+[Package|Installation D_htvp|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Installation D_htvp|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Installation D_htvp|Files Found]
+
+[Package|Installation D_htvp|Files Released]
+
+[Package|Installation D_htvp|Missing Dependency Information]
+C:\Windows\winsxs\x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.7601.23545_none_5c06d189a00e2c29\GdiPlus.dll=
+
+[Package|Installation D_htvp|Out-of-Date Dependency Information]
+
+[Package|Installation D_htvp|Files Added]
+
+[Package|Installation D_htvp|Files Removed]
+
+[Package|Installation D_htvp|Files In Project]
+C:\Data\Epson\oki\vw\hideTV 2\D_htvp\htvp - Monitoring tool.exe=Yes
+C:\Windows\System32\msvbvm60.dll=Yes
+C:\Windows\System32\oleaut32.dll=Yes
+C:\Windows\System32\olepro32.dll=Yes
+C:\Windows\System32\asycfilt.dll=Yes
+C:\Windows\System32\stdole2.tlb=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Windows\System32\VB6FR.DLL=Yes
+C:\Windows\SysWOW64\COMDLG32.OCX=Yes
+C:\Windows\SysWOW64\CMDLGFR.DLL=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\Windows\System32\VB6STKIT.DLL=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\Windows\SysWOW64\MSCOMCTL.OCX=Yes
+C:\Windows\SysWOW64\MSCMCFR.DLL=Yes
+C:\Windows\winsxs\x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.7601.23545_none_5c06d189a00e2c29\GdiPlus.dll=Yes
+
+[Package|Installation D_htvp|Configure Registry Files]
+Applicable=No
+
+[Package|Installation D_htvp|Configure Remote Servers]
+Applicable=No
+
+[Package|Installation D_htvp|Install Locations]
+C:\Data\Epson\oki\vw\hideTV 2\D_htvp\htvp - Monitoring tool.exe=$(AppPath)
+C:\Windows\System32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\Windows\System32\oleaut32.dll=$(WinSysPathSysFile)
+C:\Windows\System32\olepro32.dll=$(WinSysPathSysFile)
+C:\Windows\System32\asycfilt.dll=$(WinSysPathSysFile)
+C:\Windows\System32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\VB6FR.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\COMDLG32.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\CMDLGFR.DLL=$(WinSysPath)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\Windows\System32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Windows\SysWOW64\MSCOMCTL.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\MSCMCFR.DLL=$(WinSysPath)
+C:\Windows\winsxs\x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.7601.23545_none_5c06d189a00e2c29\GdiPlus.dll=$(WinSysPath)
+
+[Package|Installation D_htvp|Configure Shared Files]
+Applicable=Yes
+C:\Data\Epson\oki\vw\hideTV 2\D_htvp\htvp - Monitoring tool.exe=No
+
+[Package|Installation D_htvp|Distribution]
+Type=single
+Size=
+Title=htvp_Monitoring_Tool
+
+[Package|Installation D_htvp|Package]
+PackageFolder=C:\Data\Epson\oki\vw\hideTV 2\D_htvp\Package
+ProjectFolder=C:\Data\Epson\oki\vw\hideTV 2\D_htvp
+ServerSideCab=
+File1=C:\Data\Epson\oki\vw\hideTV 2\D_htvp\Package\setup.exe
+File2=C:\Data\Epson\oki\vw\hideTV 2\D_htvp\Package\Setup.Lst
+File3=C:\Data\Epson\oki\vw\hideTV 2\D_htvp\Package\htvp - Monitoring tool.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz

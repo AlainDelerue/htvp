@@ -1,0 +1,10 @@
+Ligne 30: La classe MSComctlLib.TabStrip du contrôle TabStrip n'est pas une classe de contrôle chargée.
+Ligne 71: La classe MSComDlg.CommonDialog du contrôle CommonDialog1 n'est pas une classe de contrôle chargée.
+Ligne 36: Le nom de la propriété _ExtentX dans TabStrip est incorrect.
+Ligne 37: Le nom de la propriété _ExtentY dans TabStrip est incorrect.
+Ligne 38: Le nom de la propriété MultiRow dans TabStrip est incorrect.
+Ligne 39: Le nom de la propriété _Version dans TabStrip est incorrect.
+Ligne 45: Le nom de la propriété Tabs dans TabStrip est incorrect.
+Ligne 74: Le nom de la propriété _ExtentX dans CommonDialog1 est incorrect.
+Ligne 75: Le nom de la propriété _ExtentY dans CommonDialog1 est incorrect.
+Ligne 76: Le nom de la propriété _Version dans CommonDialog1 est incorrect.

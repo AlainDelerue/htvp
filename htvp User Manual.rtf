@@ -1,0 +1,273 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fswiss\fcharset0 Calibri;}}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\sl276\slmult1\lang9\f0\fs22\par
+\pard\sl276\slmult1\qc\b\fs44 htvp quick guide\par
+\par
+\fs28 SUMMARY\par
+\pard\li1440\sl276\slmult1 A) htvp main principles (General explanation)\par
+B) htvp reference (List of functions)\par
+\pard\sl276\slmult1\par
+\par
+\par
+\par
+A) htvp main principles\par
+\par
+\ul\b0 1. Direct keyboard commands\par
+\pard\nowidctlpar\sl276\slmult1\ulnone\f1\fs22 That is only for short and simple commands.\par
+While your entry focus is in the slave's PC, just type the command you want.\par
+As soon as the command shows up in your typing it is executed.\par
+Warning: It must be the exact keystrokes sequence. If you misstype a character, you can't fix it using Backspace, you have to restart the whole sequence.\par
+Remark: You may want to avoid your slave seeing your command entry. You can do that by chosing a location where there is no typing echo, like his desktop for instance.\par
+In that case you won't see what you're typing either. Therefore this kind of commands must be very short and simple, without any parameters.\par
+\par
+\ul\f0\fs28 2. Clipboard commands\par
+\ulnone\f1\fs22 That is for enhanced commands because it allows you to easely use one or several parameters.\par
+\par
+Let's explain the principle with an example. You prepare in a Notepad document the list of commands you want to execute:\par
+\par
+TVControl A_TV-PC\par
+CreateAdminAccount Mistress poorboy\par
+RemoveAdminRights A_TV\par
+SetPW A_TV\par
+GetAccountsList\line\par
+The first line is mandatory. It tells the tool it is a list of commands to be analysed. Its syntax is the following:\par
+TVControl <PC name>\par
+The PC name is mandatory to make sure you hit the right PC (in case you have multiple connexions, you don't want the commands to be executed on the wrong machine!).\par
+Warning: Do not confuse PC name with Account name.\par
+\par
+Then you have one command per line. You can easely understand the example above, looking at the available commands you'll find further on.\par
+\par
+The syntax of each command is the following:\par
+<Command name> <Parameter1> <Parameter2>...\par
+The parameter can be mandatory: <Parameter>, or optional: [Parameter] \par
+\par
+\pard\sl276\slmult1 When your list of commands is ready, select the whole list, including the first line.\par
+Warning: Make sure the first character of your selection is the first character of "TVControl"!\par
+Then do a "Copy"... and that's it! It launches the commands on the target PC.\par
+\par
+When a command is supposed to return a result, the result is placed in the clipboard. Then do a "Past" somewhere in a Notepad document and you'll get the result.\par
+\par
+\b\f0\fs28 B) htvp reference\par
+\par
+\ul\b0 1. Direct keyboard commands list\par
+\par
+\ulnone\fs22 These commands do not require admin rights\par
+\par
+\pard\nowidctlpar\sl276\slmult1\b\f1 tvhp\b0\tab --> Hides the TV Panel\lang1033\fs24\par
+\lang9\b\fs22 tvsp\b0\tab --> Shows the TV Panel\lang1033\fs24\par
+\lang9\b\fs22 tvhmw\b0\tab --> Hides the main TV window\lang1033\fs24\par
+\lang9\b\fs22 tvsmw\b0\tab --> Shows the main TV window\lang1033\fs24\par
+\lang9\b\fs22 tvhcl\b0\tab --> Hides the TV Computer list\lang1033\fs24\par
+\lang9\b\fs22 tvscl\b0\tab --> Shows the TV Computer list\lang1033\fs24\par
+\lang9\b\fs22 tvfk\b0\tab --> Freezes the slave's keyboard (Warning: It remains frozen as long as the tool is running, even if you disconnect and even if he uses CTRL+ALT+DEL)\lang1033\fs24\par
+\lang9\b\fs22 tvrk\b0\tab --> Releases the slave's keyboard\lang1033\fs24\par
+\lang9\b\fs22 tvexit\b0\tab --> Stops the tool (Then everything comes back to normal for the slave and you need to relaunch the tool if you want to get its features back)\lang1033\fs24\par
+\pard\sl276\slmult1\lang9\f0\fs22\par
+\par
+\pard\nowidctlpar\sl276\slmult1\ul\fs28 2. Clipboard commands\par
+\pard\sl276\slmult1\ulnone\fs22\par
+\ul 2.0 List of commands\ulnone\par
+\par
+\b GetInfo\par
+LockKeyboard\par
+ReleaseKeyboard\par
+GetAccountsList\b0\par
+\b GetAccountDetails [Account name]\par
+CreateAdminAccount <Account name> [Password]\par
+CreateStandardAccount <Account name> [Password]\par
+RemoveAdminRights <Account name>\par
+SetAdminRights <Account name>\par
+SetAccountPW <Account name> [Password]\par
+RemoveAccountPW [Account name]\par
+LockAccountPW [Account name]\par
+ReleaseAccountPW [Account name]\par
+DeleteAccount <Account name>\par
+HideTVPanel\b0\fs20\par
+\b\fs22 HideTVPanelPermanent\b0\fs20\par
+\b\fs22 ShowTVPanel\b0\fs20\par
+\b\fs22 ShowTVPanelPermanent\b0\fs20\par
+\b\fs22 HideMainTV\b0\fs20\par
+\b\fs22 HideMainTVPermanent\b0\fs20\par
+\b\fs22 ShowMainTV\b0\fs20\par
+\b\fs22 ShowMainTVPermanent\b0\fs20\par
+\b\fs22 HideTVComputerList\b0\fs20\par
+\b\fs22 HideTVComputerListPermanent\b0\fs20\par
+\b\fs22 ShowTVComputerList\b0\fs20\par
+\b\fs22 ShowTVComputerListPermanent\b0\fs20\par
+\b\fs22 GetTVParameters\b0\fs20\par
+\b\fs22 TVStartsWithWindows\par
+TVDoNotStartsWithWindows\par
+TVRemovePersonalPWForUnattendedAccess\par
+TVSetWindowsLogonForAllUsers\par
+TVFullAccessOnLogonScreen\par
+TVEnableLogings\par
+TVDisableLogings\par
+ExecuteMaximized <Application Path\\name> [Application parameter #1] [Application parameter #2]\b0\fs20\par
+\b\fs22 OpenWebPageMaximized <Web page address (URL)>\par
+ReleaseMean\b0\fs20\par
+\b\fs22 MeanAddToClipboard <Suffix Text>\b0\fs20\par
+\b\fs22 MeanImposeAppli <Appli Path\\Appli name> [Appli parameter] [Reactivation timeout]\b0\fs20\par
+\b\fs22 MeanImposeWebPage <Web page address (URL)> [Reactivation timeout]\b0\fs20\par
+\b\fs22 GetVersion\par
+ProtectTool\b0\par
+\b Exit\b0\par
+\b Uninstall\b0\par
+\b CreateCustomizedTool <Direct keyboard commands prefix> <Clipboard commands keyword>\b0\par
+\par
+\par
+\ul 2.1 Global commands\ulnone\par
+\b\par
+GetInfo\par
+\b0\fs20 (Requires admin rights)\par
+\fs22 Returns info about Windows accounts (GetAccountList) and TV settings (GetTVSettingsInfo)\par
+\par
+\par
+\ul 2.2 Windows accounts management\ulnone\par
+\b\par
+GetAccountsList\b0\par
+\fs20 (Requires admin rights)\par
+\fs22 Returns info about Windows accounts (name of PC, name of current user, list of admin accounts and list of all users)\par
+\par
+\b GetAccountDetails [Account name]\par
+\b0\fs20 (Requires admin rights)\par
+\fs22 Returns a lot of informations about the account, such as whether it is active or not, when was his last login, etc. [Account name] is optional, the default one is the current one.\par
+\par
+\b CreateAdminAccount <Account name> [Password]\par
+\b0\fs20 (Requires admin rights)\par
+\fs22 Creates an admin account and set up a password if any (optional parameter)\par
+\par
+\b CreateStandardAccount <Account name> [Password]\par
+\b0\fs20 (Requires admin rights)\par
+\fs22 Creates a standard account and set up a password if any (optional parameter)\par
+\par
+\b RemoveAdminRights <Account name>\par
+\b0\fs20 (Requires admin rights + Becomes effective as for the next login)\par
+\fs22 Change the account type to standard. [Account name] is optional, the default one is the current one.\par
+\par
+\b SetAdminRights <Account name>\par
+\b0\fs20 (Requires admin rights + Becomes effective as for the next login)\par
+\fs22 Change the account type to admin. [Account name] is optional, the default one is the current one.\par
+\par
+\b SetAccountPW <Account name> [Password]\par
+\b0\fs20 (Requires admin rights)\par
+\fs22 Set the password of the account. <Account name> is mandatory. If [Password] is missing, it removes the account password.\par
+\par
+\b RemoveAccountPW [Account name]\par
+\b0\fs20 (Requires admin rights)\par
+\fs22 Remove  the password of the account.  [Account name] is optional, the default one is the current one.\par
+\par
+\b LockAccountPW  [Account name]\par
+\b0\fs20 (Requires admin rights)\par
+\fs22 Prevent the user from changing the password of the account. [Account name] is optional, the default one is the current one.\par
+\par
+\b ReleaseAccountPW  [Account name]\par
+\b0\fs20 (Requires admin rights)\par
+\fs22 Allow the user to change the password for the account. [Account name] is optional, the default one is the current one.\par
+\par
+\b DeleteAccount <Account name>\par
+\b0\fs20 (Requires admin rights)\par
+\fs22 Delete the account. <Account name> is mandatory.\par
+\par
+\ul 2.3 TV management\ulnone\par
+\par
+\b HideTVPanel\b0\fs20\par
+\fs22 Hides the TeamViewer panel.\par
+\par
+\b ShowTVPanel\b0\fs20\par
+\fs22 Shows the TeamViewer panel.\par
+\par
+\b HideMainTV\b0\fs20\par
+\fs22 Hides the main TeamViewer windows.\par
+\par
+\b ShowMainTV\b0\fs20\par
+\fs22 Shows the main TeamViewer windows.\par
+\par
+\b HideTVComputerList\b0\fs20\par
+\fs22 Hides the TeamViewer computer list.\par
+\par
+\b ShowTVComputerList\b0\fs20\par
+\fs22 Shows the TeamViewer computer list.\par
+\par
+\b GetTVParameters\b0\fs20\par
+\fs22 Returns a list of current TV parameters.\par
+\par
+\b TVStartsWithWindows\par
+\b0\fs20 (Requires admin rights + Becomes effective as for the next reboot)\par
+\fs22 Makes sure TV starts with Windows\par
+\par
+\b TVRemovePersonalPWForUnattendedAccess\par
+\b0\fs20 (Requires admin rights + Becomes effective as for the next reboot)\par
+\fs22 Delete the personal password for unattended access\par
+\par
+\b TVSetWindowsLogonForAllUsers\par
+\b0\fs20 (Requires admin rights + Becomes effective as for the next reboot)\par
+\fs22 Make sure TV starts with Windows\par
+\par
+\b TVFullAccessOnLogonScreen\par
+\b0\fs20 (Requires admin rights + Becomes effective as for the next reboot)\par
+\fs22 Gives all abilities when connected on the Windows login screen\par
+\par
+\b TVEnableLogings\par
+\b0\fs20 (Requires admin rights + Becomes effective as for the next reboot)\par
+\fs22 Enables TV logings\par
+\par
+\b TVDisableLogings\par
+\b0\fs20 (Requires admin rights + Becomes effective as for the next reboot)\par
+\fs22 Disables TV logings\par
+\par
+\ul 2.4 Applications management\ulnone\par
+\par
+\b ExecuteMaximized <Application Path\\name> [Application parameter #1] [Application parameter #2]\b0\fs20\par
+\fs22 Launches the application with up to two optional parameters. The application is launched with its window maximized.\par
+\par
+\b OpenWebPageMaximized <Web page address (URL)>\par
+\b0 Opens a Web page. The default browser is used and its window is maximized.\par
+\par
+\ul 2.5 Mean functions management\ulnone\par
+\par
+\b ReleaseMean\b0\fs20\par
+\fs22 Releases the PC from all mean functions.\par
+\par
+\b MeanAddToClipboard <Suffix Text>\b0\fs20\par
+(Mean function)\fs22\par
+When activated, each time a text is copied to the clipboard, the text <Suffix Text> is added at the end of it. Use /n to insert a line feed in your text.\par
+\par
+\b MeanImposeAppli <Appli Path\\Appli name> [Appli parameter] [Reactivation timeout]\b0\fs20\par
+(Mean function)\fs22\par
+Launches the application with an optional parameter and keeps it activated and maximized. The optional [Reactivation timout] is the timout in seconds for the application to come back full screen in case the slave minimizes it or even closes it. The default value is 5 seconds.\par
+\par
+\b MeanImposeWebPage <Web page address (URL)> [Reactivation timeout]\b0\fs20\par
+(Mean function)\fs22\par
+Opens the web page and keep the browser activated and maximized. The optional [Reactivation timout] is the timout in seconds for the browser to come back full screen in case the slave minimizes it and for the web page to be reopened in case he/she closes the browser. The default value is 5 seconds. Unfortunately, in this version of the tool the slave can take advantage of the tabs of the browser to get rid of the web page: the tool relaunches the web page only if the browser itself is closed.\par
+\par
+\par
+\ul 2.6 Miscellaneous functions\par
+\ulnone\par
+\b GetVersion\b0\par
+Returns the version of the tool.\par
+\par
+\b Exit\b0\par
+Ends the tool.\par
+\par
+\b Uninstall\b0\par
+Ends the tool and uninstall it.\par
+\par
+\b CreateCustomizedTool <Direct keyboard commands prefix> <Clipboard commands keyword>\b0\par
+Creates a customized version of the tool. The aim of this function is to allow you to create a tool that only you can control.\par
+To do so, you will change the syntax of the commands:\par
+\tab 1- For the direct keyboard commands, you will replace the twho first characters of the commands ("tv" by default) by whatever you want.\par
+\tab 2- for the clipboard command, you will replace the key-word "TVControl" by whatever you want.\par
+For instance if you launch the following clipboard command:\par
+\b CreateCustomizedTool fck ShellyFuck\b0\par
+It will create a tool in the same folder than the current one and with the same name but followed with the current time and date, like htvp235011122016.exe\par
+Then \b you can rename the tool \b0 and start using it on your slaves, but \b do not forget to use\b0 :\par
+\tab - fckhp, fcksp, fckhcl,... instead of tvhp, tvsp, tvhcl,...\par
+\tab - ShellyFuck A_TV instead of TVControl A_TV\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+}
+ 

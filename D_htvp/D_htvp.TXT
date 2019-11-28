@@ -1,0 +1,3 @@
+Le fichier .cab de votre application a été généré en tant que 'C:\Data\Epson\oki\vw\hideTV 2\D_htvp\Package\htvp - Monitoring tool.CAB'.
+
+Il y a également dans le dossier de support (C:\Data\Epson\oki\vw\hideTV 2\D_htvp\Package\Support\htvp - Monitoring tool.BAT) un fichier de commandes qui vous permettra de recréer le fichier .cab si vous modifiez certains des fichiers.
